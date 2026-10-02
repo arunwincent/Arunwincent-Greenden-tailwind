@@ -13,7 +13,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
 <body>
     <!--Responsive Navbar-->
-    <nav CLASS="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <nav id="menu-icon" CLASS="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -35,6 +35,20 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
         </ul>
     </nav>
+        <div id="mobile-menu" class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
+    <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
+    <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
+    <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
+</div>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuIcon.addEventListener('click', () => {
+        // Toggles the 'hidden' class to show/hide the mobile menu
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 
     <!--Header Section-->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
