@@ -32,20 +32,21 @@
             </li>
         </ul>
     </nav>
-        <div id="mobile-menu" class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
-    <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
-    <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
-    <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
-</div>
-<script>
-    const menuIcon = document.getElementById('menu-icon');
-    const mobileMenu = document.getElementById('mobile-menu');
+    <div id="mobile-menu"
+        class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
+        <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
+        <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
+        <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
+    </div>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-    menuIcon.addEventListener('click', () => {
-        // Toggles the 'hidden' class to show/hide the mobile menu
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
+        menuIcon.addEventListener('click', () => {
+            // Toggles the 'hidden' class to show/hide the mobile menu
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     <!--product section-->
     <section>
         <div class=" grid justify-center">
@@ -59,60 +60,70 @@
     </section>
     <!--image sections-->
     <section class="p-4 text-center">
-         <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/f3.jpg" alt="Monstera Deliciosa" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f3.jpg" alt="Monstera Deliciosa"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Monstera Deliciosa</h1>
                 <p>₹450</p>
             </div>
             <div>
-                <img src="./images/f4.jpg" alt="Dracaena trifasciata" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f4.jpg" alt="Dracaena trifasciata"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Dracaena trifasciata</h1>
                 <p>₹600</p>
             </div>
             <div>
-                <img src="./images/f5.jpg" alt="ZZ Plant" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f5.jpg" alt="ZZ Plant"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">ZZ Plant</h1>
                 <p>₹400</p>
             </div>
             <div>
-                <img src="./images/f6.jpg" alt="Clusia rosea" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f6.jpg" alt="Clusia rosea"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Clusia rosea</h1>
                 <p>₹250</p>
             </div>
         </div>
-         <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/f3.jpg" alt="Monstera Deliciosa" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
-                <h1 class="mt-5">Monstera Deliciosa</h1>
-                <p>₹450</p>
-            </div>
-            <div>
-                <img src="./images/f4.jpg" alt="Dracaena trifasciata" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
-                <h1 class="mt-5">Dracaena trifasciata</h1>
-                <p>₹600</p>
-            </div>
-            <div>
-                <img src="./images/f5.jpg" alt="ZZ Plant" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f5.jpg" alt="ZZ Plant"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">ZZ Plant</h1>
                 <p>₹400</p>
             </div>
             <div>
-                <img src="./images/f6.jpg" alt="Clusia rosea" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f6.jpg" alt="Clusia rosea"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Clusia rosea</h1>
                 <p>₹250</p>
+            </div>
+            <div>
+                <img src="./images/f1.jpg" alt="Dracaena trifasciata"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <h1 class="mt-5">Trifasciata</h1>
+                <p>₹600</p>
+            </div>
+            <div>
+                <img src="./images/f2.jpg" alt="Monstera Deliciosa"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <h1 class="mt-5">Deliciosa</h1>
+                <p>₹450</p>
             </div>
         </div>
     </section>
     <!--footer section-->
-<section class="bg-green-200 p-5 flex flex-col">
-<div>
-    <h1 class="font-bold text-2xl">Greeden</h1>
-    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptatibus possimus harum vel beatae est, ratione minus officiis dolore ullam aut, explicabo, animi iusto. Cum laudantium mollitia qui beatae! Rem?</p>
-    <p class="mt-5">@2026Greenday.com</p>
-</div>
+    <section class="bg-green-200 p-5 flex flex-col">
+        <div>
+            <h1 class="font-bold text-2xl">Greenden</h1>
+            <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptatibus possimus
+                harum vel beatae est, ratione minus officiis dolore ullam aut, explicabo, animi iusto. Cum laudantium
+                mollitia qui beatae! Rem?</p>
+            <p class="mt-5">@2026Greenday.com</p>
+        </div>
 
-</section>
+    </section>
 </body>
 
 </html>

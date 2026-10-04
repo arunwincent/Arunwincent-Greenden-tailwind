@@ -35,20 +35,21 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
         </ul>
     </nav>
-        <div id="mobile-menu" class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
-    <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
-    <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
-    <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
-</div>
-<script>
-    const menuIcon = document.getElementById('menu-icon');
-    const mobileMenu = document.getElementById('mobile-menu');
+    <div id="mobile-menu"
+        class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
+        <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
+        <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
+        <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
+    </div>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-    menuIcon.addEventListener('click', () => {
-        // Toggles the 'hidden' class to show/hide the mobile menu
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
+        menuIcon.addEventListener('click', () => {
+            // Toggles the 'hidden' class to show/hide the mobile menu
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <!--Header Section-->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -114,31 +115,35 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <!--Best selling section-->
     <section class="p-4 text-center">
         <h1 class="font-bold mt-5 text-3xl">Best seller</h1>
-         <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/f3.jpg" alt="Monstera Deliciosa" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f3.jpg" alt="Monstera Deliciosa"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Monstera Deliciosa</h1>
                 <p>₹450</p>
             </div>
             <div>
-                <img src="./images/f4.jpg" alt="Dracaena trifasciata" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f4.jpg" alt="Dracaena trifasciata"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Dracaena trifasciata</h1>
                 <p>₹600</p>
             </div>
             <div>
-                <img src="./images/f5.jpg" alt="ZZ Plant" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f5.jpg" alt="ZZ Plant"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">ZZ Plant</h1>
                 <p>₹400</p>
             </div>
             <div>
-                <img src="./images/f6.jpg" alt="Clusia rosea" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/f6.jpg" alt="Clusia rosea"
+                    class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
                 <h1 class="mt-5">Clusia rosea</h1>
                 <p>₹250</p>
             </div>
         </div>
     </section>
 
-     <!--Customer Review section-->
+    <!--Customer Review section-->
     <section class="text-center">
 
         <h1 class="font-bold text-2xl mt-5">Customer Review</h1>
@@ -155,7 +160,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                     reiciendis molestiae soluta.</p>
                 <h1 class="text-yellow-400 text-1xl">Leo </h1>
             </div>
-             <div class="bg-green-800 text-left text-white text- border border-black p-2 m-6">
+            <div class="bg-green-800 text-left text-white text- border border-black p-2 m-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam, illo doloribus placeat odio
                     numquam, minus possimus autem eum animi, impedit recusandae. Nisi hic a commodi laudantium
                     reiciendis molestiae soluta.</p>
@@ -163,25 +168,28 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </div>
         </div>
     </section>
-<!--subscription section-->
+    <!--subscription section-->
     <section class="text-center">
-            <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
-            <p class="text-center text-lg text-gray-600 mt-2">Signup for our email news paper to get execlusive discounts, updates, and more</p>
-<input type="text" class="border border-black p-2 m-3" style="width: 80%;">
-<br>
-<button class="bg-black text-white p-2 m-3 underline mb-5 rounded-lg ">Subscribe</button>
-  </div>
-</section>
+        <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+        <p class="text-center text-lg text-gray-600 mt-2">Signup for our email news paper to get execlusive discounts,
+            updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
+        <br>
+        <button class="bg-black text-white p-2 m-3 underline mb-5 rounded-lg ">Subscribe</button>
+        </div>
+    </section>
 
-<!--footer section-->
-<section class="bg-green-200 p-10 flex flex-col">
-<div>
-    <h1 class="font-bold text-2xl">Greeden</h1>
-    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptatibus possimus harum vel beatae est, ratione minus officiis dolore ullam aut, explicabo, animi iusto. Cum laudantium mollitia qui beatae! Rem?</p>
-    <p class="mt-5">@2026Greenday.com</p>
-</div>
+    <!--footer section-->
+    <section class="bg-green-200 p-10 flex flex-col">
+        <div>
+            <h1 class="font-bold text-2xl">Greenden</h1>
+            <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptatibus possimus
+                harum vel beatae est, ratione minus officiis dolore ullam aut, explicabo, animi iusto. Cum laudantium
+                mollitia qui beatae! Rem?</p>
+            <p class="mt-5">@2026Greenday.com</p>
+        </div>
 
-</section>
+    </section>
 </body>
 
 </html>
