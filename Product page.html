@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="menu-icon" CLASS="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="Product page.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact page.html">Contact</a>
+
+            </li>
+        </ul>
+    </nav>
+    <div id="mobile-menu"
+        class="hidden bg-green-50 p-5 flex flex-col gap-4 text-center text-gray-600 shadow-md md:hidden">
+        <a class="hover:underline hover:text-black block py-2" href="index.html">Home</a>
+        <a class="hover:underline hover:text-black block py-2" href="Product page.html">Products</a>
+        <a class="hover:underline hover:text-black block py-2" href="contact page.html">Contact</a>
+    </div>
+    <!--side nav bar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+   <div class="text-right p-5" >
+        <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col gap-10 items-center text-gray-600">
+
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="Product page.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact page.html">Contact</a>
+
+            </li>
+        </ul>
+
+</section>
+    <!--product section-->
+    <section>
+        <div class=" grid justify-center">
+            <h1 class="font-bold text-2xl mt-10 ">Our Products</h1>
+        </div>
+        <div class="flex justify-center items-center">
+            <input  type="text" id="search-input" class=" rounded-xl border border-black p-2 m-3" style="width:600px;"
+                placeholder="Search for a product...">
+            <button id="search-btn" class="bg-green-600 text-white p-2 rounded-xl">Search</button>
+        </div>
+    </section>
+    <!--image sections-->
+   <section class="p-4 text-center">
+    <!-- Move ALL products inside this single container -->
+    <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div>
+            <img src="./images/f3.jpg" alt="Monstera Deliciosa" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Monstera Deliciosa</h1>
+            <p>₹450</p>
+        </div>
+        <div>
+            <img src="./images/f4.jpg" alt="Dracaena trifasciata" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Dracaena trifasciata</h1>
+            <p>₹600</p>
+        </div>
+        <div>
+            <img src="./images/f5.jpg" alt="ZZ Plant" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">ZZ Plant</h1>
+            <p>₹400</p>
+        </div>
+        <div>
+            <img src="./images/f6.jpg" alt="Clusia rosea" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Clusia rosea</h1>
+            <p>₹250</p>
+        </div>
+        <div>
+            <img src="./images/f5.jpg" alt="ZZ Plant" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">ZZ Plant</h1>
+            <p>₹400</p>
+        </div>
+        <div>
+            <img src="./images/f6.jpg" alt="Clusia rosea" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Clusia rosea</h1>
+            <p>₹250</p>
+        </div>
+        <div>
+            <img src="./images/f1.jpg" alt="Dracaena trifasciata" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Trifasciata</h1>
+            <p>₹600</p>
+        </div>
+        <div>
+            <img src="./images/f2.jpg" alt="Monstera Deliciosa" class="h-60 inline hover:shadow-xl transform hover:translate-y-2">
+            <h1 class="mt-5">Deliciosa</h1>
+            <p>₹450</p>
+        </div>
+    </div> 
+</section>
+    <!--footer section-->
+    <section class="bg-green-200 p-5 flex flex-col">
+        <div>
+            <h1 class="font-bold text-2xl">Greenden</h1>
+            <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptatibus possimus
+                harum vel beatae est, ratione minus officiis dolore ullam aut, explicabo, animi iusto. Cum laudantium
+                mollitia qui beatae! Rem?</p>
+            <p class="mt-5">@2026Greenday.com</p>
+        </div>
+
+    </section>
+     <script src="product.js"></script>
+</body>
+
+</html>
